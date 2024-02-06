@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>__xX_MY_CHAT_Xx__</title>
+        <link href="mychat.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div  class="loginPage" id="loginPage">
+            <div class="top">
+                <h1>__xX_MY_CHAT_Xx__</h1>
+            </div>
+            <form id="logCredentials" class="logCredentials">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="room">Room:</label>
+                <input type="text" id="room" required>
+                <button type="submit">Connect</button>
+            </form>
+        </div>
+        
+        <div class="wrapper" id="chatPage" style="display:none">
+            <script src="sillyclient.js"></script>
+            <script src="mychat.js"></script>
+            <div class="top">
+                <h1>__xX_MY_CHAT_Xx__</h1>
+            </div>
+            <div class="sidebar">
+                <div class="wrapper-sidebar">
+                    <div id="room-name-display"></div>
+                    <div id="online-users">⬇️ Online Users ⬇️</div>
+                    <div class="Contacts"></div>
+                </div>
+            </div>
+            <div class="chat-container">
+                <div id="mychat" class="chat-messages"></div>
+                <input type="text" id="messageInput" placeholder="Type your message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </body>
+</html>
